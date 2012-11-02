@@ -22,11 +22,11 @@ App::uses('Security', 'Utility');
 App::uses('Hash', 'Utility');
 App::uses('AuthComponent', 'Controller');
 
-App::import('Vendor', 'oauth2-php/lib/OAuth2');
-App::import('Vendor', 'oauth2-php/lib/IOAuth2Storage');
-App::import('Vendor', 'oauth2-php/lib/IOAuth2RefreshTokens');
-App::import('Vendor', 'oauth2-php/lib/IOAuth2GrantUser');
-App::import('Vendor', 'oauth2-php/lib/IOAuth2GrantCode');
+App::import('Vendor', 'oauth2-php/Lib/OAuth2');
+App::import('Vendor', 'oauth2-php/Lib/IOAuth2Storage');
+App::import('Vendor', 'oauth2-php/Lib/IOAuth2RefreshTokens');
+App::import('Vendor', 'oauth2-php/Lib/IOAuth2GrantUser');
+App::import('Vendor', 'oauth2-php/Lib/IOAuth2GrantCode');
 
 class OAuthComponent extends Component implements IOAuth2Storage, IOAuth2RefreshTokens, IOAuth2GrantUser, IOAuth2GrantCode {
 	
